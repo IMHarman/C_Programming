@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.14
+#define AREA_RECTANGLE(x,y) ((x)*(y))
+
+int main()
+{
+    float r_area = AREA_RECTANGLE(5,4);
+    printf("\n%f",r_area);
+    
+}
