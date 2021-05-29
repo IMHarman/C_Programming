@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int number1, number2, divident, reminder;
+    printf("\n Enter two numbers: ");
+    printf("\n Number 1: ");
+    scanf("%d", &number1);
+    printf("\n Number 2: ");
+    scanf("%d", &number2);
+    divident=number1/number2;
+    reminder=number1%number2;
+    printf("\n Divident = %d", divident);
+    printf("\n Reminder = %d", reminder);
+
+    return 0;
+}
