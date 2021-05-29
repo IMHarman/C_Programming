@@ -1,0 +1,11 @@
+#include <stdio.h>
+#include <stdlib.h>
+#define PI 3.14
+#define AREA_CIRCLE(x) ((PI)*(x)*(x))
+
+int main()
+{
+    float area = AREA_CIRCLE(3);
+    printf("%f",area);
+    
+}
