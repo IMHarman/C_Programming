@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    int no1, no2, no3, no4, no5, ch, per;
+    printf("\n-------MENU-------");
+    printf("\n1. Calculate percentage and grade: ");
+    scanf("%d",&ch);
+    if(ch != 1)
+    {
+        printf("\n Enter a valid input.");
+        return 0;
+    }
+    printf("\n Enter the subject marks: ");
+    printf("\n Subject 1: ");
+    scanf("%d",&no1);
+    printf("\n Subject 2: ");
+    scanf("%d",&no2);
+    printf("\n Subject 3: ");
+    scanf("%d",&no3);
+    printf("\n Subject 4: ");
+    scanf("%d",&no4);
+    printf("\n Subject 5: ");
+    scanf("%d",&no5);
+    per = (no1 + no2 + no3 + no4 + no5)/5;
+    printf("%d", per);
+    if(per < 60)
+        printf("The Grade is: C.");
+    else if(per>=60 && per<70)
+        printf("The Grade is: B.");
+    else if(per>=70 && per<80)
+        printf("The Grade is: A.");
+    else if(per>=80 && per<90)
+        printf("The Grade is: S.");
+    return 0;
+}
