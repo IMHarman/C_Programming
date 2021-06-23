@@ -1,0 +1,24 @@
+//PROGRAM TO GET SUM OF THE TABLE OF ANY NUMBER.
+
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+	int n,a;
+	printf("Enter the number for which you want the table: ");
+	scanf("%d",&a);
+	printf("Enter the number till which you need table of %d: ",a);
+	scanf("%d",&n);
+	int i=1,j,sum=0;
+	while(i<=n)
+	{
+		j=i*a;
+		printf("%d\n",j);
+		i++;
+		sum+=j;
+	};	
+	printf("\n Sum : %d",sum);
+	
+	return 0;
+}
