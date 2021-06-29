@@ -1,0 +1,47 @@
+// Online C compiler to run C program online
+#include <stdio.h>
+
+int a_triangle(int,int);
+int a_square(int);
+int a_circle(int);
+int a_rectangle(int,int);
+int main() {
+    int b,h,s,r,area;
+    printf("\nEnter the value of height and base: ");
+    scanf("%d %d", &h,&b);
+    area = a_triangle(h,b);
+    printf("Area: %d",area);
+    printf("\nEnter the value of side: ");
+    scanf("%d",&s);
+    area = a_square(s);
+    printf("Area: %d",area);
+    printf("\nEnter the value of radius: ");
+    scanf("%d",&r);
+    area = a_circle(r);
+    printf("Area: %d",area);
+    printf("\nEnter the value of height and base: ");
+    scanf("%d %d",&h,&b);
+    area = a_rectangle(h,b);
+    printf("Area: %d",area);
+    return 0;
+}
+int a_triangle(int h, int b)
+{
+    int a = (h*b)/2;
+    return a;
+}
+int a_square(int s)
+{
+    int a = s*s;
+    return a;
+}
+int a_circle(int r)
+{
+    int a = 3.14*r*r;
+    return a;
+}
+int a_rectangle(int h,int b)
+{
+    int a = h*b;
+    return a;
+}
