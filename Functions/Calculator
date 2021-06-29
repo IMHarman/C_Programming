@@ -1,0 +1,50 @@
+#include <stdio.h>
+
+int add(int,int);
+int subtract(int,int);
+int multiply(int,int);
+int divide(int,int);
+int reminder(int,int);
+int main() {
+    int a,b,sum=0,diff=0,mult=0,div=0,rem=0;
+    printf("\nEnter the value of a: ");
+    scanf("%d",&a);
+    printf("\nEnter the value of b: ");
+    scanf("%d",&b);
+    sum=add(a,b);
+    printf("\nSum: %d",sum);
+    diff=subtract(a,b);
+    printf("\nDifference: %d",diff);
+    mult=multiply(a,b);
+    printf("\nMultiplication: %d",mult);
+    div=divide(a,b);
+    printf("\nDivision: %d",div);
+    rem=reminder(a,b);
+    printf("\nReminder: %d",rem);
+    return 0;
+}
+int add(int a, int b)
+{
+    int s = a+b;
+    return s;
+}
+int subtract(int a, int b)
+{
+    int d = a-b;
+    return d;
+}
+int multiply(int a, int b)
+{
+    int m = a*b;
+    return m;
+}
+int divide(int a, int b)
+{
+    int d = a/b;
+    return d;
+}
+int reminder(int a, int b)
+{
+    int r = a%b;
+    return r;
+}
