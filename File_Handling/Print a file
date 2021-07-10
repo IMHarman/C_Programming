@@ -1,0 +1,13 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int main()
+{
+    FILE *ptr;
+    char c;
+    ptr = fopen("tt.txt","r");
+    while((fscanf(ptr,"%c",&c))!=EOF)
+    {
+        printf("%c",c);
+    }return 0;
+}
